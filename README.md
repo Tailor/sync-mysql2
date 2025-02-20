@@ -1,20 +1,18 @@
 # sync-mysql2
 Make synchronous queries to a mysql database using npm's mysql2 project
 
-[![Build Status](https://img.shields.io/travis/ForbesLindesay/sync-mysql/master.svg)](https://travis-ci.org/ForbesLindesay/sync-mysql)
-[![Dependency Status](https://img.shields.io/david/ForbesLindesay/sync-mysql/master.svg)](http://david-dm.org/ForbesLindesay/sync-mysql)
-[![NPM version](https://img.shields.io/npm/v/sync-mysql.svg)](https://www.npmjs.org/package/sync-mysql)
+[![NPM version](https://www.npmjs.org/package/sync-mysql2)
 
 ## Installation
 
 ```
-npm install sync-mysql --save
+npm install sync-mysql2 --save
 ```
 
 ## Usage
 
 ```js
-var MySql = require('sync-mysql');
+var MySql = require('sync-mysql2');
 
 var connection = new MySql({
   host: 'localhost',
@@ -54,7 +52,7 @@ Like `query` and `call` but does not wait for the result. instead it returns a f
 e.g.
 
 ```js
-var MySql = require('sync-mysql');
+var MySql = require('sync-mysql2');
 
 var connection = new MySql({
   host: 'localhost',
