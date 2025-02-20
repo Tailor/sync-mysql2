@@ -1,7 +1,7 @@
 # sync-mysql2
 Make synchronous queries to a mysql database using npm's mysql2 project
 
-[![NPM version](https://www.npmjs.org/package/sync-mysql2)
+NPM - (https://www.npmjs.org/package/sync-mysql2)
 
 ## Installation
 
