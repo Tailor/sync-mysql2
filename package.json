@@ -1,6 +1,6 @@
 {
   "name": "sync-mysql2",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "description": "Make synchronous queries to a mysql2 npm package database",
   "keywords": [],
