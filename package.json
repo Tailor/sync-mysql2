@@ -1,6 +1,6 @@
 {
   "name": "sync-mysql2",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "lib/index.js",
   "description": "Make synchronous queries to a mysql2 npm package database",
   "keywords": [],
@@ -8,10 +8,10 @@
     "lib/"
   ],
   "dependencies": {
-    "babel-runtime": "^6.18.0",
-    "concat-stream": "^1.6.0",
-    "sync-rpc": "^1.1.1",
-    "then-mysql2": "^1.0.3"
+    "babel-runtime": "^6.26.0",
+    "concat-stream": "^2.0.0",
+    "sync-rpc": "^1.3.6",
+    "then-mysql2": "^1.0.4"
   },
   "devDependencies": {
     "babel-cli": "*",
