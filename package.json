@@ -2,10 +2,12 @@
   "name": "sync-mysql2",
   "version": "1.0.7",
   "main": "lib/index.js",
+  "types": "index.d.ts",
   "description": "Make synchronous queries to a mysql2 npm package database",
   "keywords": [],
   "files": [
-    "lib/"
+    "lib/",
+    "index.d.ts"
   ],
   "dependencies": {
     "babel-runtime": "^6.26.0",
