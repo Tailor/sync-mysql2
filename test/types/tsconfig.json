@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "noEmit": true,
+    "module": "commonjs",
+    "moduleResolution": "node10",
+    "target": "es2019",
+    "types": [],
+    "esModuleInterop": false,
+    "noUnusedLocals": false,
+    "baseUrl": ".",
+    "paths": { "sync-mysql2": ["../.."] }
+  },
+  "files": ["usage.ts"]
+}

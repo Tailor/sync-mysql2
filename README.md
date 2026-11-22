@@ -73,6 +73,23 @@ assert(resultC()[0].solution === 4);
 
 If you don't care about the results you can simply call `connection.finishAll()` to wait for all queries and calls to end.
 
+## TypeScript
+
+Type definitions ship with the package (`index.d.ts`). The module is CommonJS, so import it with
+
+```ts
+import Connection = require('sync-mysql2');
+// or, with "esModuleInterop": true
+import Connection from 'sync-mysql2';
+
+const connection = new Connection({ host: 'localhost', user: 'me', password: 'secret' });
+interface User { id: number; name: string }
+const users = connection.query<User>('SELECT * FROM users WHERE id > ?', [10]);
+```
+
+Placeholder values and procedure arguments are typed `string | number | boolean | null`, the values the
+library accepts. `npm run test:types` checks the definitions against `lib/index.js`.
+
 ## License
 
 MIT
