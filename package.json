@@ -1,6 +1,6 @@
 {
   "name": "sync-mysql2",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "lib/index.js",
   "types": "index.d.ts",
   "description": "Make synchronous queries to a mysql2 npm package database",
@@ -21,14 +21,16 @@
     "babel-preset-forbeslindesay": "*",
     "eslint": "*",
     "eslint-config-forbeslindesay": "*",
-    "jest": "*"
+    "jest": "*",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel src --out-dir lib",
     "lint": "eslint src",
     "test": "jest ./src/** --coverage && npm run lint",
-    "watch": "jest ./src/** --coverage --watch"
+    "watch": "jest ./src/** --coverage --watch",
+    "test:types": "node --test test/*.test.js"
   },
   "repository": {
     "type": "git",
